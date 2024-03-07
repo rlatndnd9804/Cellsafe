@@ -1,0 +1,58 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+
+.logo {
+  font-size: 30px;
+}
+
+.menu {
+  padding: 100px 0 50px 100px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.booking {
+  padding: 50px 100px 10px 0;
+}
+
+.booking .text {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.booking .bar {
+  margin-top: 10px;
+  width: 140px;
+  background-color: black;
+  height: 5px;
+  border-radius: 20px;
+}
+
+.section1 img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.nextbtn {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.nextbtn .cir {
+  width: 100px;
+  height: 100px;
+  border: 3px solid black;
+  border-radius: 50%;
+}
+
+.nextbtn .cir .left {
+  width: 50px;
+}

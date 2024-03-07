@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #eee;
+}
+
+.wrap{
+    width: 450px;
+    margin: 0 auto;
+
+}
+
+.con{
+    height: 500px;
+    border: 1px solid #dbdbdb;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    background-color: white;
+}
+
+header{
+    height: 60px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+section{
+    height: 350px;
+    background-color: lightgray;
+}
+
+.bottom_con{
+    padding: 20px;
+}
+
+.heart{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.full_heart{
+    color: crimson;
+}
