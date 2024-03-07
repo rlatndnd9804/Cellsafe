@@ -39,8 +39,9 @@ section{
 .heart{
     font-size: 25px;
     cursor: pointer;
+
 }
 
 .full_heart{
-    color: crimson;
+    color: red;
 }
