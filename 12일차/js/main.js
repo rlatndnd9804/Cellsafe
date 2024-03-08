@@ -1,19 +1,22 @@
 // 문제
 // 하트 클릭하면 빨간색으로 들어오게 만들기
 
-const heart = document.querySelector(".heart");
-let i = false; // 젤 기본 비어있는 상태
+const hearts = document.querySelectorAll(".heart"); // querySelectorAll = 모든 heart 클래스 전부 가져옴
 
-const heartHandler = () => {
-  if (!i) {
-    // 클릭했을때 비어있으면
-    heart.innerHTML = `<i class="fa-regular fa-heart full_heart"></i>`; //색갈입힌 하트 출력
-    i = true; // 색갈하트 가져온후 / 채워진 상태로 바꿈
-  } else {
-    //다음번 클릭시 채워졌기때문에
-    heart.innerHTML = `<i class="fa-regular fa-heart"></i>`; // 그냥 하트 출력
-    i = false; // 빈상태로 전환
-  }
-};
+hearts.forEach((heart) => {
+  // 가져온 클래스 각각 컨트롤
+  let i = false; // 초기(빈하트) 로 설정
 
-heart.addEventListener("click", heartHandler);
+  heart.addEventListener("click", function () {
+    // 클릭 함수
+    if (!i) {
+      // false(빈하트) 일 경우
+      heart.innerHTML = `<i class="fa-regular fa-heart full_heart"></i>`; // 빨강 하트 출력
+      i = true;
+    } else {
+      // true(빨강하트) 일경우
+      heart.innerHTML = `<i class="fa-regular fa-heart"></i>`; // 빈하트 출력
+      i = false;
+    }
+  });
+});
