@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+
+
+       *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       }
+
+       header{
+        height: 100px;
+        background-color: gray;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+       }
+
+       .progress{
+        height: 20px;
+        background-color: lightyellow;
+       }
+
+       .bar{
+        width: 10%;
+        height: 100%;
+        background-color: crimson;
+       }
+
+       section{
+        height: 100vh;
+        border: 3px solid steelblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+
+       
+
+    </style>
+</head>
+<body>
+
+    <div class="wrap">
+        <header>
+            <div class="progress">
+                <div class="bar"></div>
+            </div>
+        </header>
+
+        <section class="section_1">1</section>
+        <section class="section_2">2</section>
+        <section class="section_3">3</section>
+    </div>
+
+    <script>
+
+        const wrapEl = document.querySelector('.wrap')
+        const bar = document.querySelector('.bar')
+
+        const scrollHandler = () => {
+            const userScroll = wrapEl.offsetHeight - window.innerHeight;
+            const page = window.pageYOffset
+            const calcResult = (pageY / userScroll) * 100
+
+            barEl.style.width = `${calcResult}%`
+        }
+
+
+    </script>
+    
+</body>
+</html>
