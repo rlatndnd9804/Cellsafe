@@ -9,11 +9,13 @@ hearts.forEach((heart) => {                                               // 가
   heart.addEventListener("click", function () {                           // 클릭 함수 
     if (!i) {                                                             // false(빈하트) 일 경우 
       heart.innerHTML = `<i class="fa-solid fa-heart full_heart"></i>`; // 빨강 하트 출력
-      i = true;                                                           
-    } else {                                                              // true(빨강하트) 일경우
+      i = true;
+
+    } else {
+      // true(빨강하트) 일경우
       heart.innerHTML = `<i class="fa-regular fa-heart"></i>`;            // 빈하트 출력
       i = false;
     }
   });
-});
+})
 
